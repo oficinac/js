@@ -1,0 +1,25 @@
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Trocando imagens</title>
+        <script>
+            var imgAtual = "3x4tito.jpg";
+            var imgAnterior = "3x4.jpg";
+
+            function trocar(){    
+                document.getElementById("figura").src = imgAtual;
+                let aux = imgAtual;
+                imgAtual = imgAnterior;
+                imgAnterior = aux;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Alterando imagem com JavaScript</h3>
+        <p>Usando o JavaScript para trocar um conteúdo imagem.</p>
+        <br><br>
+        <img id="figura" src="3x4.jpg" width="300" height="300" onclick="trocar()"/>
+        <legend>Clique na imagem</legend>
+    </body>
+</html>
